@@ -29,3 +29,16 @@ $ make build
 
 - [yuroyoro](https://github.com/yuroyoro)
 - [paulvollmer](https://github.com/paulvollmer)
+
+
+---
+## Run in Local
+
+```shell
+docker pull nginx:alpine
+
+docker build -t goast-viewer .
+
+docker run --rm -it -p 8080:80 goast-viewer 
+
+```
